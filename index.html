@@ -28,12 +28,19 @@
                         个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href=""> 基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">重置密码</a></dd>
+                        <dd><a href="/user/user_info.html" target="fm">
+                                <!-- 1.引入layui.all.js --> 基本资料</a></dd>
+                        <dd>
+                            <a href="/user/user_avatar.html" target="fm">
+
+                                <!-- 1.引入layui.all.js -->更换头像</a></dd>
+                        <dd><a href="/user/user_info.html" target="fm">
+
+                                <!-- 1.引入layui.all.js -->重置密码</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href="javascript:;" id="btnLogout"><span class="iconfont icon-tuichu"></span>退出</a></li>
+                <li class="layui-nav-item"><a href="javascript:;" id="btnLogout"><span
+                            class="iconfont icon-tuichu"></span>退出</a></li>
             </ul>
         </div>
 
@@ -60,12 +67,22 @@
                         </dl>
                     </li>
                     <li class="layui-nav-item">
-                        <a href="javascript:;" class="userinfo">
-                            <span class="iconfont icon-user"></span>个人中心</a>
+                        <a class="" href="/home/dashboard.html" target="fm"><span
+                                class="iconfont icon-16"></span>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>基本资料</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
+                            <dd>
+                                <a href="/user/user_info.html" target="fm">
+                                    <!-- 1.引入layui.all.js --><i class="layui-icon layui-icon-app"></i>
+                                    个人信息</a></dd>
+                            <dd>
+                                <a href="/user/user_avatar.html" target="fm">
+
+                                    <!-- 1.引入layui.all.js --><i class="layui-icon layui-icon-app"></i>更换头像</a>
+                            </dd>
+                            <dd>
+                                <a href="/user/user_pwd.html" target="fm">
+                                    <!-- 1.引入layui.all.js --><i class="layui-icon layui-icon-app"></i>修改密码</a>
+                            </dd>
                         </dl>
                     </li>
                 </ul>
@@ -82,14 +99,19 @@
             © www.itheima.com - 传智播客黑马
         </div>
     </div>
-    <!-- 1.引入layui.all.js -->
-    <script src="/assets/lib/layui/layui.all.js"></script>
-    <!-- 2.引入jquery -->
-    <script src="/assets/lib/jquery.js"></script>
-    <!-- 3.引入baseAPI -->
-    <script src="/assets/js/baseAPI.js"></script>
-    <!-- 4.引入本页面对应的js -->
-    <script src="/assets/js/index.js"></script>
+    <!-- 1.引入layui.all.js --><a href="/user/user_info.html" target="fm">
+        <a href="/user/user_avatar.html" target="fm">
+            <a href="/user/user_pwd.html" target="fm">
+                <!-- 1.引入layui.all.js -->
+                <script src="/assets/lib/layui/layui.all.js"></script>
+                <!-- 2.引入jquery -->
+                <script src="/assets/lib/jquery.js"></script>
+                <script src="/assets/lib/cropper/Cropper.js"></script>
+                <script src="/assets/lib/cropper/jquery-cropper.js"></script>
+                <!-- 3.引入baseAPI -->
+                <script src="/assets/js/baseAPI.js"></script>
+                <!-- 4.引入本页面对应的js -->
+                <script src="/assets/js/index.js"></script>
 </body>
 
 </html>

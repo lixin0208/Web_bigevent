@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1.引入layui的样式 -->
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <!-- 2.引入自己的样式 -->
+    <link rel="stylesheet" href="/assets/css/user/user_pwd.css">
+</head>
+
+<body>
+    <!-- 卡片区域 -->
+    <div class="layui-card">
+        <div class="layui-card-header">修改用户信息</div>
+        <div class="layui-card-body">
+            <!-- form表单 -->
+            <form class="layui-form">
+                <!-- 旧密码 -->
+                <div class="layui-form-item">
+                    <label class="layui-form-label">旧密码</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="oldPwd" required lay-verify="required|pwd" placeholder="请输入旧密码"
+                            autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <!-- 新密码 -->
+                <form class="layui-form">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">新密码</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="newPwd" required lay-verify="required|pwd|samePwd"
+                                placeholder="请输入新密码" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <!-- 确认新密码 -->
+                    <form class="layui-form">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">确认新密码</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="rePwd" required lay-verify="required|pwd|rePwd"
+                                    placeholder="请确认新密码" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <!-- 按钮 -->
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit lay-filter="formDemo">修改密码</button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+        </div>
+    </div>
+    <!-- 1.引入layui.all.js -->
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <!-- 2.引入jquery -->
+    <script src="/assets/lib/jquery.js"></script>
+    <!-- 3.引入baseAPI.js -->
+    <script src="/assets/js/baseAPI.js"></script>
+    <!-- 4.引入本页面js -->
+    <script src="/assets/js/user/user_pwd.js"></script>
+</body>
+
+</html>
